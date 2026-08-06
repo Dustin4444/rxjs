@@ -164,7 +164,7 @@ importers:
     devDependencies:
       '@angular-devkit/build-angular':
         specifier: ~13.1.2
-        version: 13.1.4(@angular/compiler-cli@13.4.0(@angular/compiler@13.4.0)(typescript@5.7.3))(@angular/service-worker@13.4.0(@angular/common@13.4.0(@angular/core@13.4.0(rxjs@7.8.1)(zone.js@0.11.8))(rxjs@7.8.1))(@angular/core@13.4.0(rxjs@7.8.1)(zone.js@0.11.8)))(acorn@7.4.1)(chokidar@3.5.3)(karma@6.3.20)(protractor@7.0.0)(typescript@5.7.3)
+        version: 13.1.4(@angular/compiler-cli@13.4.0(@angular/compiler@13.4.0)(typescript@5.7.3))(@angular/service-worker@13.4.0(@angular/common@13.4.0(@angular/core@13.4.0(rxjs@7.8.1)(zone.js@0.11.8))(rxjs@7.8.1))(@angular/core@13.4.0(rxjs@7.8.1)(zone.js@0.11.8)))(acorn@8.18.0)(chokidar@3.5.3)(karma@6.3.20)(protractor@7.0.0)(typescript@5.7.3)
       '@angular-eslint/builder':
         specifier: ^13.0.0
         version: 13.5.0(eslint@8.56.0)(typescript@5.7.3)
@@ -361,8 +361,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.1
       svgo:
-        specifier: ^1.3.2
-        version: 1.3.2
+        specifier: ^2.8.3
+        version: 2.8.3
       svgson:
         specifier: ^4.1.0
         version: 4.1.0
@@ -3702,6 +3702,10 @@ packages:
     resolution: {integrity: sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==}
     engines: {node: '>= 6'}
 
+  commander@7.2.0:
+    resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
+    engines: {node: '>= 10'}
+
   comment-parser@1.4.1:
     resolution: {integrity: sha512-buhp5kePrmda3vhc5B9t7pUQXAb2Tnd0qgpkIhPhkHXxJpiPJ11H0ZEU0oBpJ2QztSbzG/ZxMj/CHsYJqRHmyg==}
     engines: {node: '>= 12.0.0'}
@@ -3928,8 +3932,8 @@ packages:
     resolution: {integrity: sha512-ACUm3L0/jiZTqfzRM3Hi9Q8eZqd6IK37mMWPLz9PJxkLWllYeRf+EHUSHYEtFop2Eqytaq1FizFVh7XfBnXCDQ==}
     engines: {node: '>= 6'}
 
-  css-what@6.1.0:
-    resolution: {integrity: sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==}
+  css-what@6.2.2:
+    resolution: {integrity: sha512-u/O3vwbptzhMs3L1fQE82ZSLHQQfto5gyZzwteVIEyeaY5Fc7R4dapF/BvRoSYFeqfBk4m0V1Vafq5Pjv25wvA==}
     engines: {node: '>= 6'}
 
   css@3.0.0:
@@ -8108,8 +8112,9 @@ packages:
   sax@1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
 
-  sax@1.3.0:
-    resolution: {integrity: sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA==}
+  sax@1.6.1:
+    resolution: {integrity: sha512-42tBVwLWnaQvW5zc4HbZrTuWccECCZfBi92FDuwtqxasH+JbPB3/FOKb1m222K42R4WxuxzzMsTswfzgtSu64Q==}
+    engines: {node: '>=11.0.0'}
 
   saxes@3.1.11:
     resolution: {integrity: sha512-Ydydq3zC+WYDJK1+gRxRapLIED9PWeSuuS41wqyoRmzvhhh9nc+QQrVMKJYzJFULazeGhzSV0QleN2wD3boh2g==}
@@ -8616,6 +8621,11 @@ packages:
     resolution: {integrity: sha512-yhy/sQYxR5BkC98CY7o31VGsg014AKLEPxdfhora76l36hD9Rdy5NZA/Ocn6yayNPgSamYdtX2rFJdcv07AYVw==}
     engines: {node: '>=4.0.0'}
     deprecated: This SVGO version is no longer supported. Upgrade to v2.x.x.
+    hasBin: true
+
+  svgo@2.8.3:
+    resolution: {integrity: sha512-5EZD0pafXX6PphdwOGCiVLDSaV1xyuQao2blHajHLsPxr07q4mmEjdtXEWgG07ae2mIz8Ex2CDXNCTiXhy3Khw==}
+    engines: {node: '>=10.13.0'}
     hasBin: true
 
   svgson@4.1.0:
@@ -9762,11 +9772,11 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
-  '@angular-devkit/build-angular@13.1.4(@angular/compiler-cli@13.4.0(@angular/compiler@13.4.0)(typescript@5.7.3))(@angular/service-worker@13.4.0(@angular/common@13.4.0(@angular/core@13.4.0(rxjs@7.8.1)(zone.js@0.11.8))(rxjs@7.8.1))(@angular/core@13.4.0(rxjs@7.8.1)(zone.js@0.11.8)))(acorn@7.4.1)(chokidar@3.5.3)(karma@6.3.20)(protractor@7.0.0)(typescript@5.7.3)':
+  '@angular-devkit/build-angular@13.1.4(@angular/compiler-cli@13.4.0(@angular/compiler@13.4.0)(typescript@5.7.3))(@angular/service-worker@13.4.0(@angular/common@13.4.0(@angular/core@13.4.0(rxjs@7.8.1)(zone.js@0.11.8))(rxjs@7.8.1))(@angular/core@13.4.0(rxjs@7.8.1)(zone.js@0.11.8)))(acorn@8.18.0)(chokidar@3.5.3)(karma@6.3.20)(protractor@7.0.0)(typescript@5.7.3)':
     dependencies:
       '@ampproject/remapping': 1.0.2
       '@angular-devkit/architect': 0.1301.4(chokidar@3.5.3)
-      '@angular-devkit/build-webpack': 0.1301.4(chokidar@3.5.3)(webpack-dev-server@4.6.0(webpack@5.65.0(esbuild@0.25.12)))(webpack@5.65.0(esbuild@0.14.11))
+      '@angular-devkit/build-webpack': 0.1301.4(chokidar@3.5.3)(webpack-dev-server@4.6.0(webpack@5.65.0(esbuild@0.14.11)))(webpack@5.65.0(esbuild@0.14.11))
       '@angular-devkit/core': 13.1.4(chokidar@3.5.3)
       '@angular/compiler-cli': 13.4.0(@angular/compiler@13.4.0)(typescript@5.7.3)
       '@babel/core': 7.29.7
@@ -9820,14 +9830,14 @@ snapshots:
       source-map-support: 0.5.21
       stylus: 0.55.0
       stylus-loader: 6.2.0(stylus@0.55.0)(webpack@5.65.0(esbuild@0.14.11))
-      terser: 5.10.0(acorn@7.4.1)
+      terser: 5.10.0(acorn@8.18.0)
       text-table: 0.2.0
       tree-kill: 1.2.2
       tslib: 2.3.1
       typescript: 5.7.3
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
       webpack-dev-middleware: 5.2.2(webpack@5.65.0(esbuild@0.14.11))
-      webpack-dev-server: 4.6.0(webpack@5.65.0(esbuild@0.25.12))
+      webpack-dev-server: 4.6.0(webpack@5.65.0(esbuild@0.14.11))
       webpack-merge: 5.8.0
       webpack-subresource-integrity: 5.0.0(webpack@5.65.0(esbuild@0.14.11))
     optionalDependencies:
@@ -9853,12 +9863,12 @@ snapshots:
       - utf-8-validate
       - webpack-cli
 
-  '@angular-devkit/build-webpack@0.1301.4(chokidar@3.5.3)(webpack-dev-server@4.6.0(webpack@5.65.0(esbuild@0.25.12)))(webpack@5.65.0(esbuild@0.14.11))':
+  '@angular-devkit/build-webpack@0.1301.4(chokidar@3.5.3)(webpack-dev-server@4.6.0(webpack@5.65.0(esbuild@0.14.11)))(webpack@5.65.0(esbuild@0.14.11))':
     dependencies:
       '@angular-devkit/architect': 0.1301.4(chokidar@3.5.3)
       rxjs: 6.6.7
-      webpack: 5.65.0(esbuild@0.14.11)
-      webpack-dev-server: 4.6.0(webpack@5.65.0(esbuild@0.25.12))
+      webpack: 5.65.0(esbuild@0.25.12)
+      webpack-dev-server: 4.6.0(webpack@5.65.0(esbuild@0.14.11))
     transitivePeerDependencies:
       - chokidar
 
@@ -11486,7 +11496,7 @@ snapshots:
     dependencies:
       '@angular/compiler-cli': 13.4.0(@angular/compiler@13.4.0)(typescript@5.7.3)
       typescript: 5.7.3
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -12909,7 +12919,7 @@ snapshots:
       loader-utils: 1.4.2
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
   babel-plugin-const-enum@1.2.0(@babel/core@7.29.7):
     dependencies:
@@ -13416,7 +13426,7 @@ snapshots:
 
   circular-dependency-plugin@5.2.2(webpack@5.65.0(esbuild@0.14.11)):
     dependencies:
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
   cjson@0.3.3:
     dependencies:
@@ -13564,6 +13574,8 @@ snapshots:
 
   commander@6.2.1: {}
 
+  commander@7.2.0: {}
+
   comment-parser@1.4.1: {}
 
   commondir@1.0.1: {}
@@ -13686,7 +13698,7 @@ snapshots:
       normalize-path: 3.0.0
       schema-utils: 4.2.0
       serialize-javascript: 6.0.1
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
   core-js-compat@3.35.1:
     dependencies:
@@ -13780,7 +13792,7 @@ snapshots:
       postcss-modules-values: 4.0.0(postcss@8.4.33)
       postcss-value-parser: 4.2.0
       semver: 7.5.4
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
   css-prefers-color-scheme@6.0.3(postcss@8.4.4):
     dependencies:
@@ -13798,7 +13810,7 @@ snapshots:
   css-select@4.3.0:
     dependencies:
       boolbase: 1.0.0
-      css-what: 6.1.0
+      css-what: 6.2.2
       domhandler: 4.3.1
       domutils: 2.8.0
       nth-check: 2.1.1
@@ -13817,7 +13829,7 @@ snapshots:
 
   css-what@3.4.2: {}
 
-  css-what@6.1.0: {}
+  css-what@6.2.2: {}
 
   css@3.0.0:
     dependencies:
@@ -16592,7 +16604,7 @@ snapshots:
     dependencies:
       klona: 2.0.6
       less: 4.1.2
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
   less@4.1.2:
     dependencies:
@@ -16626,7 +16638,7 @@ snapshots:
     dependencies:
       webpack-sources: 3.2.3
     optionalDependencies:
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
   lie@3.3.0:
     dependencies:
@@ -17108,7 +17120,7 @@ snapshots:
   mini-css-extract-plugin@2.4.5(webpack@5.65.0(esbuild@0.14.11)):
     dependencies:
       schema-utils: 4.2.0
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
   minimalistic-assert@1.0.1: {}
 
@@ -17264,7 +17276,7 @@ snapshots:
     dependencies:
       debug: 3.2.7
       iconv-lite: 0.4.24
-      sax: 1.3.0
+      sax: 1.6.1
     transitivePeerDependencies:
       - supports-color
     optional: true
@@ -18143,7 +18155,7 @@ snapshots:
       klona: 2.0.6
       postcss: 8.4.4
       semver: 7.5.4
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
   postcss-logical@5.0.4(postcss@8.4.4):
     dependencies:
@@ -18904,7 +18916,7 @@ snapshots:
     dependencies:
       klona: 2.0.6
       neo-async: 2.6.2
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
     optionalDependencies:
       sass: 1.44.0
 
@@ -18921,7 +18933,7 @@ snapshots:
 
   sax@1.2.4: {}
 
-  sax@1.3.0: {}
+  sax@1.6.1: {}
 
   saxes@3.1.11:
     dependencies:
@@ -19217,7 +19229,7 @@ snapshots:
       abab: 2.0.6
       iconv-lite: 0.6.3
       source-map-js: 0.6.2
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
   source-map-resolve@0.6.0:
     dependencies:
@@ -19467,7 +19479,7 @@ snapshots:
       klona: 2.0.6
       normalize-path: 3.0.0
       stylus: 0.55.0
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
   stylus@0.55.0:
     dependencies:
@@ -19554,6 +19566,16 @@ snapshots:
       unquote: 1.1.1
       util.promisify: 1.0.1
 
+  svgo@2.8.3:
+    dependencies:
+      commander: 7.2.0
+      css-select: 4.3.0
+      css-tree: 1.1.3
+      csso: 4.2.0
+      picocolors: 1.1.1
+      sax: 1.6.1
+      stable: 0.1.8
+
   svgson@4.1.0:
     dependencies:
       deep-rename-keys: 0.2.1
@@ -19625,16 +19647,16 @@ snapshots:
 
   term-size@2.2.1: {}
 
-  terser-webpack-plugin@5.3.9(esbuild@0.14.11)(webpack@5.65.0(esbuild@0.25.12)):
+  terser-webpack-plugin@5.3.9(esbuild@0.25.12)(webpack@5.65.0(esbuild@0.14.11)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.20
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.1
       terser: 5.24.0
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
     optionalDependencies:
-      esbuild: 0.14.11
+      esbuild: 0.25.12
 
   terser-webpack-plugin@5.6.1(esbuild@0.25.12)(webpack@5.106.2(esbuild@0.25.12)):
     dependencies:
@@ -19646,13 +19668,13 @@ snapshots:
     optionalDependencies:
       esbuild: 0.25.12
 
-  terser@5.10.0(acorn@7.4.1):
+  terser@5.10.0(acorn@8.18.0):
     dependencies:
       commander: 2.20.3
       source-map: 0.7.4
       source-map-support: 0.5.21
     optionalDependencies:
-      acorn: 7.4.1
+      acorn: 8.18.0
 
   terser@5.24.0:
     dependencies:
@@ -20356,18 +20378,18 @@ snapshots:
       mime-types: 2.1.35
       range-parser: 1.2.1
       schema-utils: 4.2.0
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
-  webpack-dev-middleware@5.3.3(webpack@5.65.0(esbuild@0.25.12)):
+  webpack-dev-middleware@5.3.3(webpack@5.65.0(esbuild@0.14.11)):
     dependencies:
       colorette: 2.0.20
       memfs: 3.6.0
       mime-types: 2.1.35
       range-parser: 1.2.1
       schema-utils: 4.2.0
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
-  webpack-dev-server@4.6.0(webpack@5.65.0(esbuild@0.25.12)):
+  webpack-dev-server@4.6.0(webpack@5.65.0(esbuild@0.14.11)):
     dependencies:
       ansi-html-community: 0.0.8
       bonjour: 3.5.0
@@ -20392,8 +20414,8 @@ snapshots:
       spdy: 4.0.2
       strip-ansi: 7.1.0
       url: 0.11.3
-      webpack: 5.65.0(esbuild@0.14.11)
-      webpack-dev-middleware: 5.3.3(webpack@5.65.0(esbuild@0.25.12))
+      webpack: 5.65.0(esbuild@0.25.12)
+      webpack-dev-middleware: 5.3.3(webpack@5.65.0(esbuild@0.14.11))
       ws: 8.14.2
     transitivePeerDependencies:
       - '@types/express'
@@ -20414,7 +20436,7 @@ snapshots:
   webpack-subresource-integrity@5.0.0(webpack@5.65.0(esbuild@0.14.11)):
     dependencies:
       typed-assert: 1.0.9
-      webpack: 5.65.0(esbuild@0.14.11)
+      webpack: 5.65.0(esbuild@0.25.12)
 
   webpack@5.106.2(esbuild@0.25.12):
     dependencies:
@@ -20456,7 +20478,7 @@ snapshots:
       - postcss
       - uglify-js
 
-  webpack@5.65.0(esbuild@0.14.11):
+  webpack@5.65.0(esbuild@0.25.12):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 0.0.50
@@ -20479,7 +20501,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.9(esbuild@0.14.11)(webpack@5.65.0(esbuild@0.25.12))
+      terser-webpack-plugin: 5.3.9(esbuild@0.25.12)(webpack@5.65.0(esbuild@0.14.11))
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
@@ -20657,7 +20679,7 @@ snapshots:
 
   xml2js@0.4.23:
     dependencies:
-      sax: 1.3.0
+      sax: 1.6.1
       xmlbuilder: 11.0.1
 
   xmlbuilder@11.0.1: {}
